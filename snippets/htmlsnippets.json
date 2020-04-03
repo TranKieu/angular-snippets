@@ -4,6 +4,6 @@
         "body": [
             "{{$2}}"
         ],
-        "description": "String interpolation"
+        "description": "String Interpolation"
     }
 }
