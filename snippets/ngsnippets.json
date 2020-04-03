@@ -1,1 +1,16 @@
-{}
+{
+    "Angular-header-form": {
+        "prefix": "ng-header-form",
+        "body": [
+            "headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')$2"
+        ],
+        "description": " HttpHeader"
+    },
+    "Angular-header-json": {
+        "prefix": "ng-header-json",
+        "body": [
+            "headers: new HttpHeaders().set('Content-Type', 'json')$2"
+        ],
+        "description": "HttpHeader"
+    }
+}

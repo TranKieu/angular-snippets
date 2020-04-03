@@ -1,1 +1,9 @@
-{}
+{
+    "Angular Interpolation": {
+        "prefix": "ng-inter",
+        "body": [
+            "{{$2}}"
+        ],
+        "description": "String interpolation"
+    }
+}
