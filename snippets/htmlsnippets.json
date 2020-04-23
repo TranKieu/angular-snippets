@@ -2,8 +2,16 @@
     "Angular Interpolation": {
         "prefix": "ng-inter",
         "body": [
-            "{{$2}}"
+            "{{$1}}"
         ],
         "description": "String Interpolation"
+    },
+	 "Angular Link Active Options": {
+        "prefix": "ng-link-option",
+        "body": [
+            "[routerLinkActiveOptions]='{exact : true}'$1"
+        ],
+        "description": "Router Link Action Options"
     }
+	
 }
