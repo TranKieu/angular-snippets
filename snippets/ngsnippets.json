@@ -1,65 +1,65 @@
 {
-    "Angular-header-form": {
-        "prefix": "ng-header-form",
-        "body": [
-            "headers: new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'})$2"
-        ],
-        "description": " HttpHeader"
-    },
-    "Angular-header-json": {
-        "prefix": "ng-header-json",
-        "body": [
-            "headers: new HttpHeaders({ 'Content-Type': 'application/json' })$2"
-        ],
-        "description": "HttpHeader"
-    },
-    "Angular-HostListener-mouse": {
-        "prefix": "ng-host-mouse",
-        "body": [
-            "@HostListener('mouseenter')",
-			"onMouseEnter() {",
-			"\t $1 ",
-			"}",
-			"@HostListener('mouseleave')",
-			"onMouseLeave() {",
-			"\t $1",
-			"}"
-        ],
-        "description": "HostListener"
-    },
-	"Angular-Router-Outlet": {
-        "prefix": "ng-outlet",
-        "body": [
-            "<router-outlet></router-outlet>$1"
-        ],
-        "description": "router-outlet"
-    },
-	"Angular-RouterDefinition": {
-        "prefix": "ng-path",
-        "body": [
-            "{",
-			"\t path: '$1',", 
-			"\t component: ${2:Component} ",
-			"$3}"
-        ],
-        "description": "RouterDefinition"
-    },
-	"Angular-RouterDefinition": {
-        "prefix": "ng-path-child",
-        "body": [
-            "{",
-			"\t path: '$1',", 
-			"\tloadChildren: () => import('${2:lazy-path}').then(m => m.${3:lazy-module})",
-			"}$4"
-        ],
-        "description": "Lazyloading route path"
-    },
-	"Import Module": {
-        "prefix": "import-m",
-        "body": [
-            "import { $2 } from '${1:module}';"
-        ],
-        "description": "Import Module"
-    }
-	
+  "Angular-header-form": {
+    "prefix": "ng-header-form",
+    "body": [
+      "headers: new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'})$2"
+    ],
+    "description": " HttpHeader"
+  },
+  "Angular-header-json": {
+    "prefix": "ng-header-json",
+    "body": [
+      "headers: new HttpHeaders({ 'Content-Type': 'application/json' })$2"
+    ],
+    "description": "HttpHeader"
+  },
+  "Angular-HostListener-mouse": {
+    "prefix": "ng-host-mouse",
+    "body": [
+      "@HostListener('mouseenter')",
+      "onMouseEnter() {",
+      "\t $1 ",
+      "}",
+      "@HostListener('mouseleave')",
+      "onMouseLeave() {",
+      "\t $1",
+      "}"
+    ],
+    "description": "HostListener"
+  },
+  "Angular-Router-Outlet": {
+    "prefix": "ng-outlet",
+    "body": ["<router-outlet></router-outlet>$1"],
+    "description": "router-outlet"
+  },
+  "Angular-RouterDefinition": {
+    "prefix": "ng-path",
+    "body": ["{", "\t path: '$1',", "\t component: ${2:Component} ", "$3}"],
+    "description": "RouterDefinition"
+  },
+  "Angular-Router-Lazy": {
+    "prefix": "ng-path-child",
+    "body": [
+      "{",
+      "\t path: '$1',",
+      "\tloadChildren: () => import('${2:lazy-path}').then(m => m.${3:lazy-module})",
+      "}$4"
+    ],
+    "description": "Lazyloading route path"
+  },
+  "Import-Module": {
+    "prefix": "imp-m",
+    "body": ["import { $2 } from '${1:module}';"],
+    "description": "Import Module"
+  },
+  "ngOnDestroy": {
+    "prefix": "ngOnDestroy",
+    "body": ["ngOnDestroy(): void {", "\t $1", "}"],
+    "description": "ngOnDestroy"
+  },
+  "ngOnChanges": {
+    "prefix": "ngOnChanges",
+    "body": ["ngOnChanges($1): void {", "\t $2", "}"],
+    "description": "ngOnChanges"
+  }
 }
