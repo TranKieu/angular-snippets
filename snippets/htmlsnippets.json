@@ -1,17 +1,31 @@
 {
-    "Angular Interpolation": {
-        "prefix": "ng-inter",
-        "body": [
-            "{{$1}}"
-        ],
-        "description": "String Interpolation"
-    },
-	 "Angular Link Active Options": {
-        "prefix": "ng-link-option",
-        "body": [
-            "[routerLinkActiveOptions]='{exact : true}'$1"
-        ],
-        "description": "Router Link Action Options"
-    }
-	
+  "Angular Interpolation": {
+    "prefix": "ng-inter",
+    "body": ["{{$1}}"],
+    "description": "String Interpolation"
+  },
+  "Angular Link Active Options": {
+    "prefix": "ng-link-option",
+    "body": ["[routerLinkActiveOptions]='{exact : true}'$1"],
+    "description": "Router Link Action Options"
+  },
+  "Angular Form updateOn": {
+    "prefix": "ng-UpdateOn",
+    "body": ["[ngModelOptions]='{updateOn : \"blur\"}'$1"],
+    "description": "ngModelOptions"
+  },
+  "Angular Reactive Form": {
+    "prefix": "ng-reative",
+    "body": [
+      "<form [formGroup]=\"${1:form}\" (ngSubmit)=\"onSubmit()$2\">$3</form>"
+    ],
+    "description": "Reactve Form"
+  },
+  "Angular Template-driven Form": {
+    "prefix": "ng-template",
+    "body": [
+      "<form novalidate #${1:form}='ngForm' (ngSubmit)='onSubmit(${2:form}.value)'>$3</form>"
+    ],
+    "description": "Template-driven Form"
+  }
 }
