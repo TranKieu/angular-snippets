@@ -61,5 +61,16 @@
     "prefix": "ngOnChanges",
     "body": ["ngOnChanges($1): void {", "\t $2", "}"],
     "description": "ngOnChanges"
+  },
+  "Provider forwardRef": {
+    "prefix": "ng-provide-for",
+    "body": [
+      "export const $1: Provider = {",
+      "\tprovide: NG_${2:VALUE_ACCESSOR},",
+      "\tuseExisting: forwardRef(() => $3),",
+      "\tmulti: true",
+      "}"
+    ],
+    "description": "Provider forwardRef"
   }
 }
