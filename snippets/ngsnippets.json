@@ -52,16 +52,6 @@
     "body": ["import { $2 } from '${1:module}';"],
     "description": "Import Module"
   },
-  "ngOnDestroy": {
-    "prefix": "ngOnDestroy",
-    "body": ["ngOnDestroy(): void {", "\t $1", "}"],
-    "description": "ngOnDestroy"
-  },
-  "ngOnChanges": {
-    "prefix": "ngOnChanges",
-    "body": ["ngOnChanges($1): void {", "\t $2", "}"],
-    "description": "ngOnChanges"
-  },
   "Provider forwardRef": {
     "prefix": "ng-provide-for",
     "body": [
@@ -72,5 +62,25 @@
       "}"
     ],
     "description": "Provider forwardRef"
+  },
+  "ngOnDestroy": {
+    "prefix": "ngOnDestroy",
+    "body": ["ngOnDestroy(): void {", "\t $1", "}"],
+    "description": "ngOnDestroy"
+  },
+  "ngOnChanges": {
+    "prefix": "ngOnChanges",
+    "body": ["ngOnChanges($1): void {", "\t $2", "}"],
+    "description": "ngOnChanges"
+  },
+  "ngAfterViewInit": {
+    "prefix": "ngAfterViewInit",
+    "body": ["ngAfterViewInit(): void {", "\t $1", "}"],
+    "description": "ngAfterViewInit"
+  },
+  "ngAfterContentInit": {
+    "prefix": "ngAfterContentInit",
+    "body": ["ngAfterContentInit(): void {", "\t $1", "}"],
+    "description": "ngAfterContentInit"
   }
 }
