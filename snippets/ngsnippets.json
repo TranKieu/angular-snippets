@@ -82,5 +82,38 @@
     "prefix": "ngAfterContentInit",
     "body": ["ngAfterContentInit(): void {", "\t $1", "}"],
     "description": "ngAfterContentInit"
+  },
+  "ExpressServer": {
+    "prefix": "nodeExpress",
+    "body": [
+      "import { createServer } from 'http';",
+      "import { Express, Request, Response } from 'express';",
+      "import express from 'express';",
+      "",
+      "const app: Express = express();",
+      "app.get('/', async (req: Request, res: Response) => {",
+      "\tres.send('Wilkommen!');",
+      "});",
+      "",
+      "// Undefined Route",
+      "app.use(( req: Request, res: Response, next: NextFunction) => {",
+      "\tconst err = new Error('Not Found');",
+      "\tnext(err);",
+      "});",
+      "// Error handler",
+      "app.use((err: Error, req: Request, res: Response, next: NextFunction) => {",
+      "\tres.status(500);",
+      "\tres.json({",
+      "\t\terrors: {",
+      "\t\tmessage: err.message,",
+      "\t\terror: err",
+      "\t}});",
+      "});",
+      "// http.createServer(app)",
+      "createServer(app).listen(3000, 'localhost', () => {",
+      "\tconsole.log(`Server listing...`);",
+      "});"
+    ],
+    "description": "ExpressServer"
   }
 }

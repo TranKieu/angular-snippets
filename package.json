@@ -1,29 +1,27 @@
 {
-    "name": "angular-snippets",
-    "displayName": "Angular Snippets",
-    "description": "Angular Snippets",
-    "version": "0.0.1",
-    "publisher": "hax",
-    "icon": "ng.png",
-    "license": "MIT",
-    "engines": {
-        "vscode": "^1.43.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [{
-                "language": "typescript",
-                "path": "./snippets/ngsnippets.json"
-            },
-            {
-                "language": "typescript",
-                "path": "./snippets/htmlsnippets.json"
-            }, {
-                "language": "html",
-                "path": "./snippets/htmlsnippets.json"
-            }
-        ]
-    }
+  "name": "angular-snippets",
+  "displayName": "Angular Snippets",
+  "description": "Angular Snippets",
+  "version": "0.0.1",
+  "publisher": "hax",
+  "icon": "ng.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/ngsnippets.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/htmlsnippets.json"
+      }
+    ]
+  }
 }
