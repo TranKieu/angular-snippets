@@ -21,6 +21,14 @@
       {
         "language": "html",
         "path": "./snippets/htmlsnippets.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/csssnippets.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/csssnippets.json"
       }
     ]
   }
